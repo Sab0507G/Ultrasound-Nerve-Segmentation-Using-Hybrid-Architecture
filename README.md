@@ -1,11 +1,9 @@
-# 🧠 AG-USegNet: Attention-Guided Ultrasound Nerve Segmentation using Hybrid U-Net + SegNet
+# AG-USegNet: Attention-Guided Ultrasound Nerve Segmentation using Hybrid U-Net + SegNet
 
 ## Introduction
 Ultrasound imaging is widely used in medical diagnostics, but segmenting anatomical structures like nerves remains a challenging task due to low contrast, speckle noise, and anatomical variations. This project implements an **attention-guided hybrid deep learning model combining U-Net and SegNet** for **Brachial Plexus segmentation** from ultrasound images.
 
 The model integrates **attention mechanisms** to enhance nerve-specific features while suppressing background noise, improving segmentation accuracy and efficiency.
-
----
 
 ## Importance & Relevance
 Accurate segmentation of the **Brachial Plexus nerve** is crucial for various medical applications:
@@ -14,15 +12,11 @@ Accurate segmentation of the **Brachial Plexus nerve** is crucial for various me
 - **Surgical Planning**: Reduces risk of accidental nerve damage  
 - **Medical Training**: Enables high-quality labeled data for training and automation  
 
----
-
 ## Challenges in Brachial Plexus Segmentation
 - The **Brachial Plexus is small** and blends with surrounding tissues  
 - **Ultrasound images are noisy** with low contrast  
 - **Traditional CNNs struggle** with fine details and global context  
 - Poor balance between **localization and feature extraction**  
-
----
 
 ## Why Hybrid U-Net + SegNet?
 This project combines the strengths of both architectures:
@@ -32,9 +26,7 @@ This project combines the strengths of both architectures:
 - **Hybrid Approach**: Improves boundary detection and localization  
 - **Attention Integration**: Enhances relevant features while suppressing noise  
 
----
-
-## 🏗️ Model Architecture
+## Model Architecture
 The **AG-USegNet** consists of:
 
 1. **Encoder (U-Net)**  
@@ -52,15 +44,11 @@ The **AG-USegNet** consists of:
    - Focus on nerve-relevant regions  
    - Suppress irrelevant background features  
 
----
-
-## 🧠 Attention Mechanism
+## Attention Mechanism
 - Integrated **attention-gated skip connections**  
 - Highlights **important nerve regions**  
 - Reduces background noise interference  
 - Improves **boundary detection and localization accuracy**  
-
----
 
 ## Dataset
 - Source: **Kaggle Brachial Plexus Ultrasound Dataset**
@@ -69,8 +57,6 @@ The **AG-USegNet** consists of:
 - **Images**: Ultrasound scans  
 - **Masks**: Binary segmentation masks  
 - **CSV File**: Pixel-level annotations  
-
----
 
 ## Methodology
 
@@ -92,40 +78,35 @@ The **AG-USegNet** consists of:
 - F1-Score  
 - Boundary Accuracy  
 
----
-
-## 📊 Results
+## Results
 - **Dice Coefficient:** 0.8450  
 - **F1-Score:** 0.8856  
 - **IoU:** 0.7947  
 
-✅ Improved segmentation accuracy compared to baseline models  
-✅ Better boundary detection and localization  
+Improved segmentation accuracy compared to baseline models  
+Better boundary detection and localization  
 
----
-
-## 🔬 Ablation Study
+## Ablation Study
 - Compared model performance:
-  ### 📊 Performance Visualization
-![Ablation Results](plot_color.png)
+  
+![Ablation Results](<img width="374" height="106" alt="Screenshot 2026-03-18 at 3 06 33 PM" src="https://github.com/user-attachments/assets/4eed2f98-b7a3-4899-b13c-34d1a95a7e66" />
+)
 
-
-📌 Result:  
+Result:  
 Attention significantly improves segmentation quality and precision  
 
+![Results](<img width="189" height="72" alt="Screenshot 2026-03-18 at 3 11 33 PM" src="https://github.com/user-attachments/assets/58d913a5-c417-4afa-977a-abcb6343075c" />
+)
 
-
-## 🚀 Key Highlights
+## Key Highlights
 - Attention-guided hybrid architecture (U-Net + SegNet)  
 - Improved performance in noisy ultrasound images  
 - Lightweight and efficient for near real-time inference  
 
-
-## 🔮 Future Work
+## Future Work
 - Real-time deployment optimization  
 - Multi-class medical image segmentation  
 - Advanced post-processing (CRFs)  
-
 
 ## Conclusion
 This project demonstrates the effectiveness of an **attention-guided hybrid U-Net + SegNet architecture** for brachial plexus nerve segmentation. The model improves segmentation accuracy and can assist medical professionals in diagnosis and treatment planning.
